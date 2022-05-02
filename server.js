@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 const sequelize = require("./config/connection.js");
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-const sessDb = {
+const sessionDb = {
   secret: "Super secret secret",
   cookie: {},
   resave: false,
@@ -19,7 +19,7 @@ const sessDb = {
   })
 };
 
-app.use(session(sessDb));
+app.use(session(sessionDb));
 
 const hbs = exphbs.create({
   helpers: {
