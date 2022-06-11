@@ -1,28 +1,25 @@
-async function editFormHandler(event) {
+async function loginFormHandler(event) {
     event.preventDefault();
   
-    const title = document.querySelector('input[name="post-title"]').value;
-    const post_content = document.querySelector('input[name="post-content"]').value;
-    const id = window.location.toString().split('/')[
-        window.location.toString().split('/').length - 1
-      ];
-
-    const response = await fetch(`/api/posts/${id}`, {
-        method: 'PUT',
+    const email = document.querySelector('#email-login').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
+  
+    if (email && password) {
+      const response = await fetch('/api/users/login', {
+        method: 'post',
         body: JSON.stringify({
-            title,
-            post_content
+          email,
+          password
         }),
-        headers: {
-            'Content-Type': 'application/json'
-        }
+        headers: { 'Content-Type': 'application/json' }
       });
-      
+  
       if (response.ok) {
-        document.location.replace('/dashboard/');
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
+    }
   }
-  
-  document.querySelector('.edit-post-form').addEventListener('submit', editFormHandler);
+
+  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
