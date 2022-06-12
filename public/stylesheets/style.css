@@ -1,8 +1,9 @@
 :root {
     --primary: #0e0e0e;
     --secondary: #c4d106;
-    --tertiary: #015e0c;
-    --light-red: #b82b04;
+    --courage: #015e0c;
+    --power: #b82b04;
+    --wisdom: #0404eb;
     --dark: #38302e;
     --border-radius: 0.3rem;
   }
@@ -18,7 +19,7 @@
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
-    color: var(--light-red);
+    color: var(--power);
     line-height: 1.5;
     font-size: 16px;
   }
@@ -36,7 +37,7 @@
   }
   
   h2 a:visited {
-    color: var(--tertiary);
+    color: var(--courage);
   }
   
   h2 a {
@@ -83,14 +84,14 @@
     color: var((--primary));
     border: none;
     outline: none;
-    background-color: var(--light-red);
+    background-color: var(--power);
     box-shadow: 3px 3px var(--dark);
     transform: translate(-1px, -1px);
   }
   
   .btn:hover {
     color: var(--primary);
-    background-color: var(--tertiary);
+    background-color: var(--courage);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
   }
@@ -106,7 +107,7 @@
   .navbar {
     width: 100%;
     position: fixed;
-    background-color: var(--tertiary);
+    background-color: var(--courage);
   }
   
   .nav-item {
@@ -119,13 +120,13 @@
   }
 
   .nav-item a:hover {
-    color: blue;
+    color: var(--wisdom);
   }
   
   .hero {
     padding: 3% 4%;
     height: 75px;
-    background-color: var(--tertiary);
+    background-color: var(--courage);
     color: var(--primary);
   }
   
@@ -137,11 +138,11 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 2rem;
     background-color: var(--primary);
-    color: var(--light-red);
+    color: var(--power);
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-red);
+    box-shadow: 6px 5px var(--power);
   }
   
   .app-title a {
@@ -156,7 +157,7 @@
     margin-bottom: 10px;
     padding: 1.5%;
     border-radius: var(--border-radius);
-    background-color: var(--light-red);
+    background-color: var(--power);
     color: var(--primary);
     text-decoration: none;
   }
@@ -169,7 +170,7 @@
     display: inline-block;
     padding: 1em;
     margin-bottom: .5em;
-    background-color: var(--light-red);
+    background-color: var(--power);
     color: var(--primary);
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -183,14 +184,15 @@
   }
   
   .post-header {
-    color: blue;
-    background-color: blue;
+    color: var(--wisdom);
+    background-color: var(--wisdom);
     padding: 1%;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }
   
-  .card-body {
+  .post-body {
     padding: 1%;
+    background-color: var(--wisdom);
   }
   
   /* FORM */
@@ -198,7 +200,7 @@
   .form-input,
   .form-textarea {
     display: block;
-    color: blue;
+    color: var(--primary);
   }
   
   .form-label {
@@ -211,7 +213,7 @@
     padding: 1%;
     margin: 5px 0;
     font-size: 1.2rem;
-    border: 2px solid var(--light-red);
+    border: 2px solid var(--power);
     border-radius: var(--border-radius);
   }
   
