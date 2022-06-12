@@ -12,11 +12,11 @@
   </article>
   {{#if post.comments}}
     <section class="card">
-      <div class="card-header">
+      <div class="post-header">
         <h3>Comments</h3>
       </div>
 
-      <div class="card-body">
+      <div class="post-body">
         {{#each post.comments}}
           <div>
             <p>
@@ -32,11 +32,11 @@
   {{/if}}
 
   <form id="new-comment-form" class="card">
-    <div class="card-header">
+    <div class="post-header">
       <h3>Add New Comment</h3>
     </div>
 
-    <div class="card-body">
+    <div class="post-body">
       <input type="hidden" name="post-id" value="{{post.id}}" />
 
       <label class="form-label" for="comment-body">Comment</label>
