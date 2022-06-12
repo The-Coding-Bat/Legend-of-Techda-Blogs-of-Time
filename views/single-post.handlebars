@@ -10,7 +10,6 @@
       {{post.body}}
     </div>
   </article>
-
   {{#if post.comments}}
     <section class="card">
       <div class="card-header">
@@ -21,8 +20,7 @@
         {{#each post.comments}}
           <div>
             <p>
-              {{body}}
-              {{log body}}
+              {{comment_text}}
             </p>
             <p>
               &mdash; {{User.username}}, {{format_date createdAt}}

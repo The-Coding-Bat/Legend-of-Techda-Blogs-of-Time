@@ -1,8 +1,8 @@
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
+    --primary: #0e0e0e;
+    --secondary: #c4d106;
+    --tertiary: #015e0c;
+    --light-red: #b82b04;
     --dark: #38302e;
     --border-radius: 0.3rem;
   }
@@ -13,10 +13,12 @@
   
   body {
     background-color: var(--primary);
+    background-image: url(../assets/images/pixel-art-pixels-triforce-the-legend-of-zelda-wallpaper.jpg);
+    background-size: cover;
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
-    color: var(--dark);
+    color: var(--light-red);
     line-height: 1.5;
     font-size: 16px;
   }
@@ -66,8 +68,8 @@
       padding: 10px;
   }
   
-  .card-header h2 {
-    color: var(--primary);
+  .post-header h2 {
+    color: whitesmoke;
   }
   
   .btn {
@@ -78,10 +80,10 @@
     display: block;
     margin: 5px 0;
     border-radius: var(--border-radius);
-    color: var(--primary);
+    color: var((--primary));
     border: none;
     outline: none;
-    background-color: var(--light-dark);
+    background-color: var(--light-red);
     box-shadow: 3px 3px var(--dark);
     transform: translate(-1px, -1px);
   }
@@ -104,7 +106,7 @@
   .navbar {
     width: 100%;
     position: fixed;
-    background-color: var(--dark);
+    background-color: var(--tertiary);
   }
   
   .nav-item {
@@ -112,12 +114,18 @@
   }
   
   .nav-item a {
-    color: var(--primary);
+    color: var(--secondary);
+    font-size: 30px;
+  }
+
+  .nav-item a:hover {
+    color: blue;
   }
   
   .hero {
     padding: 3% 4%;
-    background-color: var(--dark);
+    height: 75px;
+    background-color: var(--tertiary);
     color: var(--primary);
   }
   
@@ -125,18 +133,19 @@
     max-width: 75%;
   }
   
-  .app-title {
-    font-size: 3rem;
+  .dash-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
     background-color: var(--primary);
-    color: var(--dark);
+    color: var(--light-red);
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
+    box-shadow: 6px 5px var(--light-red);
   }
   
   .app-title a {
-    color: var(--dark);
+    color: red;
   }
   
   .list-group {
@@ -147,7 +156,7 @@
     margin-bottom: 10px;
     padding: 1.5%;
     border-radius: var(--border-radius);
-    background-color: var(--light-dark);
+    background-color: var(--light-red);
     color: var(--primary);
     text-decoration: none;
   }
@@ -160,7 +169,7 @@
     display: inline-block;
     padding: 1em;
     margin-bottom: .5em;
-    background-color: var(--dark);
+    background-color: var(--light-red);
     color: var(--primary);
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -173,9 +182,9 @@
     border-radius: var(--border-radius);
   }
   
-  .card-header {
-    color: var(--primary);
-    background-color: var(--dark);
+  .post-header {
+    color: blue;
+    background-color: blue;
     padding: 1%;
     border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
   }
@@ -185,10 +194,11 @@
   }
   
   /* FORM */
-  .form-label,
+  .title-label,
   .form-input,
   .form-textarea {
     display: block;
+    color: blue;
   }
   
   .form-label {
@@ -201,7 +211,7 @@
     padding: 1%;
     margin: 5px 0;
     font-size: 1.2rem;
-    border: 2px solid var(--light-dark);
+    border: 2px solid var(--light-red);
     border-radius: var(--border-radius);
   }
   
@@ -314,207 +324,10 @@
   .col-12 {
     flex: 0 0 100%;
   }
-  
-  /* col-sm */
-  @media screen and (min-width: 640px) {
-    .col-sm-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-sm-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-sm-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-sm-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-sm-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-sm-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-sm-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-sm-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-sm-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-sm-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-sm-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-sm-12 {
-      flex: 0 0 100%;
-    }
-  }
-  
-  /* col-md */
-  @media screen and (min-width: 768px) {
-    .col-md-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-md-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-md-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-md-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-md-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-md-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-md-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-md-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-md-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-md-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-md-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-md-12 {
-      flex: 0 0 100%;
-    }
-  }
-  
-  /* col-lg */
-  @media screen and (min-width: 992px) {
-    .col-lg-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-lg-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-lg-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-lg-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-lg-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-lg-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-lg-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-lg-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-lg-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-lg-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-lg-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-lg-12 {
-      flex: 0 0 100%;
-    }
-  }
-  
-  /* col-xl */
-  @media screen and (min-width: 1200px) {
-    .col-xl-1 {
-      flex: 0 0 calc(100% * 1 / 12 - 2%);
-    }
-  
-    .col-xl-2 {
-      flex: 0 0 calc(100% * 2 / 12 - 2%);
-    }
-  
-    .col-xl-3 {
-      flex: 0 0 calc(100% * 3 / 12 - 2%);
-    }
-  
-    .col-xl-4 {
-      flex: 0 0 calc(100% * 4 / 12 - 2%);
-    }
-  
-    .col-xl-5 {
-      flex: 0 0 calc(100% * 5 / 12 - 2%);
-    }
-  
-    .col-xl-6 {
-      flex: 0 0 calc(100% * 6 / 12 - 2%);
-    }
-  
-    .col-xl-7 {
-      flex: 0 0 calc(100% * 7 / 12 - 2%);
-    }
-  
-    .col-xl-8 {
-      flex: 0 0 calc(100% * 8 / 12 - 2%);
-    }
-  
-    .col-xl-9 {
-      flex: 0 0 calc(100% * 9 / 12 - 2%);
-    }
-  
-    .col-xl-10 {
-      flex: 0 0 calc(100% * 10 / 12 - 2%);
-    }
-  
-    .col-xl-11 {
-      flex: 0 0 calc(100% * 11 / 12 - 2%);
-    }
-  
-    .col-xl-12 {
-      flex: 0 0 100%;
-    }
+
+  .zelda-ref {
+    font-family: 'Press Start 2P', cursive;
+    color: green;
+    -webkit-text-stroke: 1px #000000;
+    text-align: center;
   }
