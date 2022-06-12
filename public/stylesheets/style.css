@@ -91,7 +91,7 @@
   
   .btn:hover {
     color: var(--primary);
-    background-color: var(--courage);
+    background-color: var(--wisdom);
     transform: translate(0, 0);
     box-shadow: 2px 2px var(--dark);
   }
