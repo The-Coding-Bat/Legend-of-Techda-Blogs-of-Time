@@ -2,7 +2,7 @@
     --primary: #0e0e0e;
     --secondary: #c4d106;
     --courage: #015e0c;
-    --power: #b82b04;
+    --power: #ec3503;
     --wisdom: #0404eb;
     --dark: #38302e;
     --border-radius: 0.3rem;
@@ -18,7 +18,7 @@
     background-size: cover;
     margin: 0;
     padding: 0;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     color: var(--power);
     line-height: 1.5;
     font-size: 16px;
@@ -116,6 +116,7 @@
   }
   
   .nav-item a {
+    font-family: 'Press Start 2P', cursive;
     color: var(--secondary);
     font-size: 20px;
   }
@@ -148,6 +149,8 @@
   
   .app-title a {
     color: red;
+    -webkit-text-stroke: 1px var(--dark);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   .list-group {
