@@ -164,7 +164,7 @@
   }
   
   .list-item:hover {
-    background-color: var(--dark);
+    background-color: var(--wisdom);
   }
   
   .footer a {
@@ -176,6 +176,11 @@
     border-radius: var(--border-radius);
     text-decoration: none;
   }
+
+  .footer a:hover {
+    background-color: var(--wisdom);
+  }
+  
   
   /* CARDS */
   .card {
@@ -330,8 +335,10 @@
 
   .zelda-ref {
     font-family: 'Press Start 2P', cursive;
-    color: green;
+    color: lawngreen;
     -webkit-text-stroke: 1px #000000;
     text-align: center;
+    position: relative;
+    bottom: 10px;
   }
 
