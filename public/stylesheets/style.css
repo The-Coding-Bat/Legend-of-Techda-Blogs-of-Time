@@ -18,7 +18,7 @@
     background-size: cover;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--power);
     line-height: 1.5;
     font-size: 16px;
@@ -32,12 +32,12 @@
   h6 {
     font-weight: 700;
     margin: 0;
-    color: var(--dark);
+    color: var(--power);
     line-height: 1.25;
   }
   
   h2 a:visited {
-    color: var(--courage);
+    color: var(--secondary);
   }
   
   h2 a {
