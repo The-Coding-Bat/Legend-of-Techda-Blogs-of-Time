@@ -105,6 +105,7 @@
   }
   
   .navbar {
+    font-family: 'Press Start 2P', cursive;;
     width: 100%;
     position: fixed;
     background-color: var(--courage);
@@ -116,7 +117,7 @@
   
   .nav-item a {
     color: var(--secondary);
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .nav-item a:hover {
@@ -333,3 +334,4 @@
     -webkit-text-stroke: 1px #000000;
     text-align: center;
   }
+
