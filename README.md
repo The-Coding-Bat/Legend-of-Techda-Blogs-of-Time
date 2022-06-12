@@ -16,7 +16,8 @@ Have tech advice, or perhaps issues, or anything of the sort? This tech blog wil
 Just go to the deployed application!
 ## License 
 This project is license under MIT
-## Testsnpm start.
+## Tests
+npm start.
 ## Contributing 
 Want to contribute in some way? Contact me! See info below!
 ## Questions
