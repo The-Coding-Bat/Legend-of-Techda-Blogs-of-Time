@@ -17,8 +17,9 @@ router.post("/", withAuth, (req, res) => {
 });
 
 router.put("/:id", withAuth, (req, res) => {
-  console.log(req.body, req.params.id)
-  Post.update(req.body, {
+  const body = req.body;
+  console.log(body, req.params.id)
+  Post.update({title: body.title, post_text: body.body}, {
     where: {
       id: req.params.id
     }
