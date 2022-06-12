@@ -112,6 +112,7 @@
   }
   
   .nav-item {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0 40px;
   }
   
@@ -150,7 +151,7 @@
   .app-title a {
     color: red;
     -webkit-text-stroke: 1px var(--dark);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
   }
   
   .list-group {
@@ -188,7 +189,7 @@
   /* CARDS */
   .card {
     margin: 0 0 20px 0;
-    border: 3px solid var(--dark);
+    border: 3px solid var(--secondary);
     border-radius: var(--border-radius);
   }
   
@@ -200,6 +201,7 @@
   }
   
   .post-body {
+    color: whitesmoke;
     padding: 1%;
     background-color: var(--wisdom);
   }
