@@ -17,7 +17,7 @@ Just go to the deployed application!
 ## License 
 This project is license under MIT
 ## Tests
-npm start.
+```npm start```
 ## Contributing 
 Want to contribute in some way? Contact me! See info below!
 ## Questions
